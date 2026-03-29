@@ -1,0 +1,9 @@
+[build]
+rustflags = [
+    "-C",
+    "link-args=-nostartfiles",
+    "-C",
+    "link-args=-nostdlib",
+    "-C",
+    "link-args=-static",       # 静态编译，不挂载链接库
+]
